@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgorund"
+    tools:context="com.technexia.user.myapplication.LoginActivity">
+
+    <TextView
+        android:id="@+id/wellcomeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:layout_centerHorizontal="true"
+        android:text="WellCome To Notification App"
+        android:textSize="24sp"/>
+    <EditText
+        android:id="@+id/login_emailEdt"
+        android:layout_below="@+id/wellcomeTxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/input_background"
+        android:padding="10dp"
+        android:hint="email..."
+        />
+
+    <EditText
+        android:id="@+id/login_passwordEdt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/login_emailEdt"
+        android:background="@drawable/input_background"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:hint="password.."
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/login_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_passwordEdt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/input_background"
+        android:text="Login to my account"
+        android:textColor="@color/colorAccent" />
+
+
+    <Button
+        android:id="@+id/login_reg_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_login_btn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_button"
+        android:text="Register my account"
+        android:textColor="@color/colorAccent" />
+</RelativeLayout>
